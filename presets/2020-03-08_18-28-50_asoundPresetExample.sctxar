@@ -1,0 +1,33 @@
+var o, p;
+o = [
+	Archive.prNew,  IdentityDictionary.prNew,  Array.prNew(32),  Event.prNew,  
+	Array.prNew(4),  Array.prNew(11)
+];
+p = [
+	// Archive
+	0, [ dictionary: o[1] ],  
+	// IdentityDictionary
+	1, [ array: o[2],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	2, [ 'presets',  o[3],  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// Event
+	3, [ array: o[4],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	4, [ nil,  nil,  '1',  o[5] ],  
+	// Array
+	5, [ -24.81,  -24.81,  -29.32,  -41.05,  
+		-43.76,  -48.72,  -57.74,  -60.0,  
+		-47.82,  -47.37,  -57.74 ]
+];
+prUnarchive(o,p);

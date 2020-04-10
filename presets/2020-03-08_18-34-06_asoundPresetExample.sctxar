@@ -1,0 +1,48 @@
+var o, p;
+o = [
+	Archive.prNew,  IdentityDictionary.prNew,  Array.prNew(32),  Event.prNew,  
+	Array.prNew(16),  Array.prNew(18),  Array.prNew(11),  Array.prNew(18)
+];
+p = [
+	// Archive
+	0, [ dictionary: o[1] ],  
+	// IdentityDictionary
+	1, [ array: o[2],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	2, [ 'presets',  o[3],  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// Event
+	3, [ array: o[4],  size: 3,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	4, [ nil,  nil,  '1',  o[5],  
+		nil,  nil,  '3',  o[6],  
+		nil,  nil,  nil,  nil,  
+		'2',  o[7],  nil,  nil ],  
+	// Array
+	5, [ 0.0,  0.0,  -60.0,  -60.0,  
+		-60.0,  -60.0,  -60.0,  -60.0,  
+		-60.0,  -60.0,  -60.0,  -60.0,  
+		-60.0,  -60.0,  -60.0,  -60.0,  
+		-60.0,  -60.0 ],  
+	// Array
+	6, [ -60.0,  -60.0,  -58.67,  -56.01,  
+		-50.24,  -39.59,  -40.03,  -0.98,  
+		-19.18,  -47.58,  -24.94 ],  
+	// Array
+	7, [ -0.98,  -0.98,  -60.0,  -60.0,  
+		-60.0,  -60.0,  -60.0,  -60.0,  
+		-60.0,  -60.0,  -60.0,  -60.0,  
+		-60.0,  0.0,  0.0,  -60.0,  
+		-60.0,  -60.0 ]
+];
+prUnarchive(o,p);
